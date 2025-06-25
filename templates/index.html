@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Page </title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+<body>
+    <div class="Container">
+        <h1>CALCULATOR_USING_FIREBASE_CONNECTIVITY📟</h1>
+        <form method="POST">
+            <input type="number" step="any" name="num1" placeholder="enter number 1"required>
+            <input type="number" step="any" name="num2" placeholder="enter number 2"required>
+            <select name="operation" required>
+                <option value="add">Add(+)</option>
+                <option value="sub">Subtract(-)</option>
+                <option value="mul">multiply(*)</option>
+                <option value="div">dvide(/)</option>
+            </select>
+            <button type="submit">calculation</button>
+        </form>
+
+        {% if  result !=''%}
+        <div class="result">Result:{{result}}</div>
+        {% endif %}
+        </div>
+    
+</body>
+</html>
