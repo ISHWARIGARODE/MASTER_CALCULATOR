@@ -1,4 +1,5 @@
-Project Description
+Project Description:
+
 This project is a smart calculator application built using Python (or web/mobile technologies) that performs basic arithmetic operations (addition, subtraction, multiplication, division) and connects to Firebase for storing, retrieving, and syncing calculation history in real-time.
 
 
